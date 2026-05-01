@@ -1116,8 +1116,17 @@ function initExperimentSwitcher() {
   });
 }
 
+function initSplashOpener() {
+  const splash = document.querySelector(".splash-opener");
+  if (!splash) return;
+  const removeSplash = () => splash.classList.add("is-gone");
+  splash.addEventListener("animationend", removeSplash, { once: true });
+  window.setTimeout(removeSplash, 5000);
+}
+
 const openingContainer = document.querySelector('[data-gallery="opening"]');
 if (openingContainer) createMarkerGallery(openingContainer, openingRun);
+initSplashOpener();
 renderRunNav();
 archiveRuns.forEach(renderArchiveRun);
 initExperimentSwitcher();
