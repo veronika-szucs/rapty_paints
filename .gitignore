@@ -1,0 +1,4 @@
+.~lock.*
+imgs/*
+!imgs/optimized/
+!imgs/optimized/**
