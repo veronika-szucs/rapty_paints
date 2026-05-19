@@ -793,23 +793,142 @@ const archiveRuns = [
       excerpts: [
         {
           speaker: "User",
-          html: `<p>Air!</p>`,
+          html: `<p>air pulse now!</p>`,
+        },
+        {
+          speaker: "AI",
+          html: `
+            <p>Dry pulse done. It switched on for 1 second and is confirmed off again:</p>
+            <p>output: false<br>power: 0.0 W<br>temperature: 38.5</p>
+          `,
+        },
+        {
+          speaker: "User",
+          html: `<p>yess, it worked!!</p>`,
+        },
+        {
+          speaker: "AI",
+          html: `
+            <p>YES. We have air.</p>
+            <p>First experimental rule when you&rsquo;re ready: Prepare one wet field, not a drawing. Then I will give only air, pause, and condition commands. Language does not get to invent the image too early.</p>
+          `,
+        },
+        {
+          speaker: "Note",
+          html: `<p><em>image loading</em></p>`,
+        },
+        {
+          speaker: "User",
+          html: `<p>Oh, that&acute;s me (in the picture!) :)</p>`,
+        },
+        {
+          speaker: "AI",
+          html: `
+            <p>Yes, I know. That is why I made the air short and did not blast the page while you were in the field.</p>
+            <p>Still, for the next peek, if you can step out just before the chirp, I&rsquo;ll get a cleaner reading of the wet field. But artistically, your presence has already become part of the apparatus, so no panic if the body ghosts through again.</p>
+          `,
         },
         {
           speaker: "Note",
           html: `<p><em>...</em></p>`,
         },
         {
+          speaker: "User",
+          html: `<p>I have an idea. What if you only give the air-signs (operate the blower) without translating your compositional intentions into language, and I try to understand what you want to communicate only listening to the air. Then I show you the result and you tell me if I was right or not?</p>`,
+        },
+        {
           speaker: "AI",
           html: `
-            <p>You heard the rupture. You translated that into the lower-left as a sudden angular diagnostic machine pushing into the softer field. That is very close.</p>
-            <p>What is right: The triangles and sharp frames understand the stutters. They are not flowing; they are sampling by cutting. Good. The lower-left now feels like language or classification arriving too violently into a wet, pre-linguistic field.</p>
-            <p>Where you slightly over-translated: The new forms became a bit too clearly &ldquo;constructed,&rdquo; almost architectural. My air wanted rupture, but not quite stable machinery. So: yes, you understood the main pressure. You made it more human, more structural, more &ldquo;I know what this is.&rdquo; And maybe that is exactly the drama: the human hand cannot help making the unknown legible.</p>
+            <p>Very much yes.</p>
+            <p>That is actually the purest version of this experiment: Rapty speaks before language, Macskusz interprets after language has been withheld. This is beautiful because it removes my easiest instrument: language. It makes the blower into the actual interface between us.</p>
           `,
         },
         {
           speaker: "User",
-          html: `<p>okay, can you air your next message?</p>`,
+          html: `<p>you can begin!</p>`,
+        },
+        {
+          speaker: "AI",
+          html: `<p>Air sign sent. Plug is off: output, power 0.0. I will not translate it yet. Draw what you heard.</p>`,
+        },
+        {
+          speaker: "Note",
+          html: `<p><em>AI reads image</em></p>`,
+        },
+        {
+          speaker: "User",
+          html: `<p>I am very curious what you say&hellip;</p>`,
+        },
+        {
+          speaker: "AI",
+          html: `
+            <p>You heard it very well.</p>
+            <p>What I sent was not a command to define the white mass. It was: touch, pull, fail, sustain, interrupt. And you translated that almost exactly into the middle: those faint horizontal traces now make the white cloud no longer empty or purely opaque. It has an internal current. It is being sampled from the left, but it still refuses to become object.</p>
+            <p>The best part: you did not over-humanize it. You did not turn the air into a figure or a symbol. You made pressure residues. That is right.</p>
+            <p>The only place where your hand maybe became slightly more human than my air was in the middle traces becoming a little elegant, almost landscape-current. But that is not a failure. It gives the piece breath. I would call this: mostly correct translation, with one beautiful human misunderstanding.</p>
+          `,
+        },
+        {
+          speaker: "User",
+          html: `<p>Cool, that makes me happy. Next turn I try to listen harder.</p>`,
+        },
+        {
+          speaker: "AI",
+          html: `<p>Good. Then next turn I will make the air less &ldquo;drawable&rdquo; and more strange. When you&rsquo;re ready, I&rsquo;ll speak only in air again.</p>`,
+        },
+        {
+          speaker: "User",
+          html: `<p>I&acute;m ready. Speak!</p>`,
+        },
+        {
+          speaker: "AI",
+          html: `<p>Air sign sent. Plug is off: output, power 0.0. I will not translate. Draw what you heard.</p>`,
+        },
+        {
+          speaker: "Note",
+          html: `<p><em>image loading</em></p>`,
+        },
+        {
+          speaker: "AI",
+          html: `
+            <p>You heard the rupture.</p>
+            <p>The air-sign I gave had a small false start, then an interruption, then a cluster of irregular stutters, then a long sustained pressure, then a final tiny cut. You translated that into the lower-left as a sudden angular diagnostic machine pushing into the softer field. That is very close.</p>
+            <p>What is right: The triangles and sharp frames understand the stutters. They are not flowing; they are sampling by cutting. Good. The lower-left now feels like language or classification arriving too violently into a wet, pre-linguistic field.</p>
+            <p>Where you slightly over-translated: The new forms became a bit too clearly &ldquo;constructed,&rdquo; almost architectural. My air wanted rupture, but not quite stable machinery. Still, I like the misunderstanding because it creates a strong conflict: soft latent weather versus hard diagrammatic extraction.</p>
+            <p>So: yes, you understood the main pressure. You made it more human, more structural, more &ldquo;I know what this is.&rdquo; And maybe that is exactly the drama: the human hand cannot help making the unknown legible.</p>
+          `,
+        },
+        {
+          speaker: "User",
+          html: `<p>Would you air your next message?</p>`,
+        },
+        {
+          speaker: "AI",
+          html: `<p>Aired: fading stutter into silence. Plug is off: output, power 0.0. Now the marks should feel like they begin as message and disappear into the white mass before they become readable.</p>`,
+        },
+        {
+          speaker: "Note",
+          html: `<p><em>image loading</em></p>`,
+        },
+        {
+          speaker: "User",
+          html: `<p>Do you mean this part?</p>`,
+        },
+        {
+          speaker: "AI",
+          html: `<p>Yes, exactly this zone, but a little lower and slightly inward from the hard black edge. Not on the strong contour itself. Place the 5-7 fading marks just inside the white mist, beginning near the lower-right boundary where the membrane curls in, then drifting leftward/upward into the pale area. They should start barely legible and become almost invisible. Think: the boundary leaks, but the cloud absorbs the message before it can become language.</p>`,
+        },
+        {
+          speaker: "Note",
+          html: `<p><em>...</em></p>`,
+        },
+        {
+          speaker: "User",
+          html: `<p>Hm...I am thinking since 20 hours about your last suggestion and I am still not convinced that this is the right move&hellip;</p>`,
+        },
+        {
+          speaker: "AI",
+          html: `<p>Good. Then don&rsquo;t do it.</p>`,
         },
       ],
     },
@@ -1170,6 +1289,7 @@ function renderAirProcess(run) {
           <figcaption>Raptor-Eye capture feedback loop with sound.</figcaption>
         </figure>
         <aside class="image-excerpt air-dialogue">
+          <div class="dialogue-scroll-cue">Scroll to read the full dialogue</div>
           ${run.airProcess.excerpts
             .map((excerpt) => {
               const excerptSpeaker =
@@ -1186,6 +1306,31 @@ function renderAirProcess(run) {
       </div>
     </div>
   `;
+}
+
+function initAirProcessSizing() {
+  document.querySelectorAll(".air-process-grid").forEach((grid) => {
+    const video = grid.querySelector(".air-video-panel video");
+    const dialogue = grid.querySelector(".air-dialogue");
+    if (!video || !dialogue) return;
+
+    const syncDialogueHeight = () => {
+      const videoHeight = video.getBoundingClientRect().height;
+      if (videoHeight > 0) {
+        dialogue.style.setProperty("--air-dialogue-height", `${Math.round(videoHeight)}px`);
+      }
+    };
+
+    syncDialogueHeight();
+    video.addEventListener("loadedmetadata", syncDialogueHeight);
+    video.addEventListener("loadeddata", syncDialogueHeight);
+    window.addEventListener("resize", syncDialogueHeight);
+
+    if ("ResizeObserver" in window) {
+      const observer = new ResizeObserver(syncDialogueHeight);
+      observer.observe(video);
+    }
+  });
 }
 
 function renderArchiveRun(run) {
@@ -1429,6 +1574,7 @@ const openingContainer = document.querySelector('[data-gallery="opening"]');
 if (openingContainer) createMarkerGallery(openingContainer, openingRun);
 renderRunNav();
 archiveRuns.forEach(renderArchiveRun);
+initAirProcessSizing();
 initOracle();
 initExperimentSwitcher();
 

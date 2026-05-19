@@ -1586,7 +1586,41 @@ ol + p {
 }
 
 .air-dialogue {
-  align-self: center;
+  align-self: start;
+  height: var(--air-dialogue-height, 560px);
+  max-height: 72vh;
+  overflow-y: auto;
+  padding-right: 10px;
+  scrollbar-gutter: stable;
+}
+
+.air-dialogue::-webkit-scrollbar {
+  width: 8px;
+}
+
+.air-dialogue::-webkit-scrollbar-track {
+  background: rgba(32, 34, 37, 0.06);
+  border-radius: 999px;
+}
+
+.air-dialogue::-webkit-scrollbar-thumb {
+  background: rgba(70, 185, 215, 0.48);
+  border-radius: 999px;
+}
+
+.dialogue-scroll-cue {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  margin: 0 0 2px 81px;
+  padding: 0 0 9px;
+  background: linear-gradient(180deg, var(--paper) 72%, rgba(251, 246, 238, 0));
+  color: var(--muted);
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 0.62rem;
+  letter-spacing: 0.09em;
+  line-height: 1.35;
+  text-transform: uppercase;
 }
 
 .about-section {
