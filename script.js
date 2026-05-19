@@ -1332,13 +1332,13 @@ const oracleFragments = {
     "The studio remains guilty, living, and therefore more useful than purity.",
   ],
   images: [
-    ["imgs macskusz/optimized/1-1200.webp", "imgs macskusz/optimized/37-1200.webp"],
-    ["imgs macskusz/optimized/6-1200.webp", "imgs macskusz/optimized/43-1200.webp"],
-    ["imgs macskusz/optimized/12-1200.webp", "imgs macskusz/optimized/49-1200.webp"],
-    ["imgs macskusz/optimized/18-1200.webp", "imgs macskusz/optimized/55-1200.webp"],
-    ["imgs macskusz/optimized/24-1200.webp", "imgs macskusz/optimized/61-1200.webp"],
-    ["imgs macskusz/optimized/31-1200.webp", "imgs macskusz/optimized/67-1200.webp"],
-    ["imgs macskusz/optimized/73-1200.webp", "imgs macskusz/optimized/76-1200.webp"],
+    ["oracle-imgs/1-1200.webp", "oracle-imgs/37-1200.webp"],
+    ["oracle-imgs/6-1200.webp", "oracle-imgs/43-1200.webp"],
+    ["oracle-imgs/12-1200.webp", "oracle-imgs/49-1200.webp"],
+    ["oracle-imgs/18-1200.webp", "oracle-imgs/55-1200.webp"],
+    ["oracle-imgs/24-1200.webp", "oracle-imgs/61-1200.webp"],
+    ["oracle-imgs/31-1200.webp", "oracle-imgs/67-1200.webp"],
+    ["oracle-imgs/73-1200.webp", "oracle-imgs/76-1200.webp"],
   ],
 };
 
