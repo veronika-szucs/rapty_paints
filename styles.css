@@ -1931,9 +1931,48 @@ ol + p {
   stroke: var(--cyan);
 }
 
+@media (max-width: 1100px) {
+  .process-evidence {
+    grid-template-columns: 1fr;
+    max-width: 100%;
+  }
+
+  .process-dialogue {
+    max-width: 100%;
+  }
+
+  .process-evidence .process-artifact,
+  .process-evidence .process-dialogue {
+    min-width: 0;
+    width: 100%;
+  }
+
+  .run-nav {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+  }
+
+  .run-nav a {
+    white-space: nowrap;
+  }
+}
+
 @media (max-width: 920px) {
   body {
     font-size: 18px;
+  }
+
+  .run-nav {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+  }
+
+  .run-nav a {
+    white-space: nowrap;
   }
 
   .oracle-stage {
@@ -1946,9 +1985,11 @@ ol + p {
 
   .process-evidence {
     grid-template-columns: 1fr;
+    max-width: 100%;
   }
 
   .process-dialogue {
+    max-width: 100%;
     margin-top: 12px;
   }
 
