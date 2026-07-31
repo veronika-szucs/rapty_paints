@@ -1966,7 +1966,9 @@ ol + p {
 
   .archive-stage.has-excerpt,
   .archive-stage.has-process,
+  .archive-stage.has-process-below,
   .archive-stage.has-excerpt.has-process,
+  .archive-stage.has-excerpt-right:not(.has-process),
   .archive-stage.has-excerpt-right.has-process {
     grid-template-columns: 1fr;
   }
@@ -1980,8 +1982,18 @@ ol + p {
   .archive-stage.has-excerpt-right:not(.has-process) .image-excerpt,
   .archive-stage.has-excerpt-right:not(.has-process) .archive-image-panel,
   .archive-stage.has-excerpt-right.has-process .image-excerpt,
-  .archive-stage.has-excerpt-right.has-process .archive-image-panel {
+  .archive-stage.has-excerpt-right.has-process .archive-image-panel,
+  .archive-stage.has-process-below .image-process-strip,
+  .archive-stage.has-process-below .archive-image-panel {
     grid-column: auto;
+  }
+
+  .archive-stage,
+  .archive-image-panel,
+  .image-excerpt,
+  .image-process-strip {
+    min-width: 0;
+    max-width: 100%;
   }
 
   .air-process-grid {
