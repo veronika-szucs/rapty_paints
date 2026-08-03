@@ -55,6 +55,12 @@ const openingRun = {
   ],
 };
 
+const brookeCredit =
+  'Thank you, <a href="https://en.wikipedia.org/wiki/Leonard_Leslie_Brooke" target="_blank" rel="noreferrer">L. Leslie Brooke</a>. We found the ingenious pig physiognomies from <a href="https://www.loc.gov/item/84181093/" target="_blank" rel="noreferrer"><em>The Story of the Three Little Pigs</em></a> (1904) among the leftovers of cultural memory and fed them to our argument about purity, authenticity, and authorship.';
+
+const franckenCredit =
+  'Thank you, unknown Flemish painter—possibly <a href="https://en.wikipedia.org/wiki/Frans_Francken_the_Younger" target="_blank" rel="noreferrer">Frans Francken the Younger</a>. While your reply is pending, we borrowed Death’s violin riff. After <a href="https://www.hermitagemuseum.org/digital-collection/30997" target="_blank" rel="noreferrer"><em>Death Playing the Violin (Death and a Money-Lender)</em></a>, first half of the seventeenth century.';
+
 const archiveRuns = [
   {
     id: "specimen-series",
@@ -451,6 +457,7 @@ const archiveRuns = [
         kicker: "Page 29",
         title: "Consent Of The Dead",
         note: "Pencil on paper",
+        credit: franckenCredit,
       },
       {
         src: "imgs/36.jpg",
@@ -505,18 +512,21 @@ const archiveRuns = [
         kicker: "Page 38",
         title: "Purity / Humanity",
         note: "Pencil on paper",
+        credit: brookeCredit,
       },
       {
         src: "imgs/45.jpg",
         kicker: "Page 39",
         title: "Purity / Humanity",
         note: "Pencil on paper",
+        credit: brookeCredit,
       },
       {
         src: "imgs/46.jpg",
         kicker: "Page 40",
         title: "Purity / Humanity",
         note: "Pencil on paper",
+        credit: brookeCredit,
       },
       {
         src: "imgs/47.jpg",
@@ -983,6 +993,7 @@ function createMarkerGallery(container, run) {
           <span class="caption-kicker"></span>
           <span class="caption-title"></span>
           <span class="caption-note"></span>
+          <span class="caption-credit" hidden></span>
         </figcaption>
       </figure>
       <div class="marker-column" role="tablist" aria-label="${escapeHtml(run.title)} image markers"></div>
@@ -993,6 +1004,7 @@ function createMarkerGallery(container, run) {
   const captionKicker = container.querySelector(".caption-kicker");
   const captionTitle = container.querySelector(".caption-title");
   const captionNote = container.querySelector(".caption-note");
+  const captionCredit = container.querySelector(".caption-credit");
   const markerColumn = container.querySelector(".marker-column");
   let currentIndex = 0;
 
@@ -1018,6 +1030,8 @@ function createMarkerGallery(container, run) {
       captionTitle.textContent = image.title;
       captionNote.textContent = image.note;
       captionNote.hidden = !image.note;
+      captionCredit.innerHTML = image.credit ?? "";
+      captionCredit.hidden = !image.credit;
     }
 
     markerColumn.querySelectorAll(".image-marker").forEach((button) => {
@@ -1053,6 +1067,7 @@ function createThumbnailGallery(container, run) {
           <span class="caption-kicker"></span>
           <span class="caption-title"></span>
           <span class="caption-note"></span>
+          <span class="caption-credit" hidden></span>
         </figcaption>
       </figure>
     </div>
@@ -1065,6 +1080,7 @@ function createThumbnailGallery(container, run) {
   const captionKicker = container.querySelector(".caption-kicker");
   const captionTitle = container.querySelector(".caption-title");
   const captionNote = container.querySelector(".caption-note");
+  const captionCredit = container.querySelector(".caption-credit");
   const processStrip = container.querySelector(".image-process-strip");
   const thumbnails = container.querySelector(".archive-thumbnails");
   let currentIndex = 0;
@@ -1202,6 +1218,8 @@ function createThumbnailGallery(container, run) {
     captionTitle.textContent = display.title ?? image.title;
     captionNote.textContent = display.note ?? image.note;
     captionNote.hidden = !(display.note ?? image.note);
+    captionCredit.innerHTML = display.credit ?? image.credit ?? "";
+    captionCredit.hidden = !(display.credit ?? image.credit);
   }
 
   processStrip.addEventListener("click", (event) => {

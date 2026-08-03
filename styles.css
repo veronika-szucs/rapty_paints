@@ -779,6 +779,19 @@ ol + p {
   line-height: 1.42;
 }
 
+.caption-credit {
+  max-width: 760px;
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 0.78rem;
+  line-height: 1.38;
+}
+
+.caption-credit a {
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
 .image-excerpt {
   display: grid;
   gap: 11px;
